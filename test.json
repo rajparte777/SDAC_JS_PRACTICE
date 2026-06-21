@@ -1,0 +1,18 @@
+{
+    "name": "jon",
+    "age": 21,
+    "city" :["mumbai",       "pune"],
+
+
+"user":[
+
+    {
+        "id":1,
+        "name":"ram",
+    },
+    {
+         "id":2,
+        "name":"sam",
+    }
+]
+}
