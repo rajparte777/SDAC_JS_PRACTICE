@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 //function with name
 function meth(){
     console.log("hello js");
@@ -6,7 +6,6 @@ function meth(){
 meth()
 
 //Anonymous Function
-
 const a =function(){
   console.log("hello unknown");
 }
@@ -18,7 +17,7 @@ const b = ()=>{
     console.log("hello arrow function");
 }
 b()
-=======
+
 //name function
 
 function meth(){
@@ -51,4 +50,3 @@ const x = ()=>{
     console.log("object");
 }
 x()
->>>>>>> b731124329e7cf1da9b89d16ea380d5baa57bb37
