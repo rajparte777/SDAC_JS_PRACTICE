@@ -9,7 +9,7 @@ class Student{
 }
 class School{
     static totalStudent:any =0;
-    studentList:student[]=[]
+    studentList:Student[]=[]
     addStudent(student:Student):void{
         this.studentList.push(student)
         School.totalStudent++
@@ -19,3 +19,8 @@ class School{
         return School.totalStudent
     }
 }
+const s= new Student(1,"tom");
+// const sc =new Student();
+
+// sc.addStudent(s);
+console.log(School.totalCount());
