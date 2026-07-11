@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Querry selector </title>
+</head>
+<body>
+    <button id="but" style="width: 100px;height: 50px;">
+        Click
+    </button>
+
+
+<script>
+    const but =document.querySelector('#but')
+    but.addEventListener('click',()=>{
+        alert('Query selector')
+    })
+</script>
+
+
+    <!-- <style>
+        .dark{
+            background-color: cadetblue;
+        }
+    </style>
+    <script>
+        const button = document.querySelector('#but')
+        
+        button.addEventListener('click',()=>{
+           button.classList.toggle('dark')
+        })
+    </script> -->
+    
+</body>
+</html>
