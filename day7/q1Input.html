@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="input">
+     <button id="button">ADD</button>
+    <ul id="ul">
+        <li >java</li>
+        <li>python</li>
+    </ul>
+   
+
+
+
+
+    <script>
+        const button =document.getElementById("button")
+ button.addEventListener('click',()=>{
+            const ul = document.getElementById("ul")
+        const li = document.createElement("li")
+        const input =document.getElementById("input").value
+        li.textContent =input
+        ul.append(li)
+        localStorage.setItem("data",input)
+
+
+ })
+
+
+        
+    </script>
+</body>
+</html>

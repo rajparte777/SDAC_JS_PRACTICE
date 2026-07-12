@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<input type="text" name="" id="name" placeholder="name"><br>
+<input type="email" name="" id="email" placeholder="email"><br>
+<input type="text" name="" id="query" placeholder="query"><br>
+
+<button id="button">Click</button>
+
+<script>
+    const button = document.getElementById("button")
+    button.addEventListener('click',()=>{
+        const input =document.getElementById("name").value
+        const nameReg =/^[A-Za-z]+$/
+        const email =document.getElementById("email").value
+        const emailReg =/[^\s@]+@[^\s@]+\.[^\s@]/
+        if(!nameReg.test(input)){
+            alert("entervalid name")
+        }
+        else if(!emailReg.test(email))
+  alert("enter avalid email")
+        }
+        else{
+            alert("valid")
+        }
+        /
+        // const query =document.getElementById("query").value
+
+      
+
+    })
+</script>
+
+</body>
+</html>
