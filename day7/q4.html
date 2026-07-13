@@ -18,19 +18,23 @@
     button.addEventListener('click',()=>{
         const input =document.getElementById("name").value
         const nameReg =/^[A-Za-z]+$/
+
         const email =document.getElementById("email").value
         const emailReg =/[^\s@]+@[^\s@]+\.[^\s@]/
+
+        const query =document.getElementById("query").value
+        
         if(!nameReg.test(input)){
             alert("entervalid name")
         }
-        else if(!emailReg.test(email))
-  alert("enter avalid email")
+        else if(!emailReg.test(email)){
+        alert("enter avalid email")
         }
         else{
             alert("valid")
         }
-        /
-        // const query =document.getElementById("query").value
+        
+        
 
       
 
