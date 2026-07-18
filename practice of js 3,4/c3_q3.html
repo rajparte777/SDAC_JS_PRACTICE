@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>Count : <span id="count">0</span></p>
+<button id="inc" onclick="Inc()">Increment</button>
+<button id="dec" onclick="Dec()">Decrement</button>
+<button id="res" onclick="Res()">Reset</button>
+
+<script>
+// const count = document.getElementById("count")
+let count =0;
+function Inc(){
+    count++
+    document.getElementById("count").innerText =count
+
+}
+function Dec(){
+    count--
+    if(count < 0){
+        alert("count is less than 0")
+    }
+    else{
+    document.getElementById("count").innerText =count
+    }
+}
+function Res(){
+    count =0
+    document.getElementById("count").innerText =count
+
+}
+
+
+</script>
+</body>
+</html>
