@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementation client side</title>
+</head>
+<body>
+    
+
+<span>Name</span> <input type="text" id="name"><br>
+   <span>Email</span><input type="email" id="email"><br>
+<span>Password</span><input type="number" name="" id="password">
+
+<button id="Submit">Submit</button>
+<script>
+    const Submit  = document.getElementById("Submit")
+    Submit.addEventListener('click', ()=>{
+        const name = document.getElementById("name").value
+        const nameReg =/^[A-Za-z]+$/
+
+        const email = document.getElementById("email").value
+        const emailReg =/[^\s@]+@[^\s@]+\.[^\s@]/
+
+         
+           const password = document.getElementById("password").value
+        const passReg =/^[0-9]+$/
+
+
+
+if(!nameReg.test(name)){
+        alert("enter valid name ")
+    }
+
+    else if(!emailReg.test(email)){
+        alert("enter valid email")
+    }
+    else if(!passReg.test(password)){
+        alert("invalid password ,should in deigit")
+    }
+    else{
+        alert("valid input")
+    }
+
+    })
+
+    
+
+
+
+</script>
+</body>
+</html>
