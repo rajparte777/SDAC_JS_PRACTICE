@@ -1,4 +1,4 @@
-/async await
+//async await
 
 function name(status){
     return new Promise((resolve, reject) => {
