@@ -22,3 +22,8 @@ const y = a.reduce((tot,a)=>{
         return tot =tot + a;
 })
 console.log(y);
+//reduce
+const y = a.reduce((tot,a)=>{
+        return tot =tot + a;
+})
+console.log(y);
